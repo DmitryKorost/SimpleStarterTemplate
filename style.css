@@ -1,7 +1,10 @@
 body {
     margin: 0px;
     background-color: #050729;
+}
 
+img {
+    object-fit: fill;  
 }
 
 .header {
@@ -16,28 +19,35 @@ body {
     padding-top: 70px;
 }
 
-.header__menu__purple {
+.header__menu__button {
     height: 384px;
     width: 580px;
-    background-image: url('./image/HOME 1.jpg');
     mix-blend-mode: multiply;
     border: none;
+    border-radius: 30px;
+    background-size: 100% 100%;
+}
+
+.header__menu__purple {
+    background-image: url('./image/HOME 1.jpg');
+}
+
+.header__menu__purple:hover {
+    box-shadow:  0 4px 8px 0 #9d62af, 0 6px 20px 0 #9d62af;
 }
 
 .header__menu__yellow {
-    height: 384px;
-    width: 580px;
     background-image: url('./image/HOME-2 1.jpg');
-    mix-blend-mode: multiply;
-    border: none;
+}
+
+.header__menu__yellow:hover {
+    box-shadow:  0 4px 8px 0 #9d62af, 0 6px 20px 0 #9d62af;
 }
 
 .main {
     color: #fff;
     text-align: center;
     line-height: 0.75;
-    margin-bottom: 0px;
-
 }
 
 .main__text1 {
@@ -73,4 +83,82 @@ body {
     margin-bottom: 0px;
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
+}
+
+@media (max-width: 1400px) {
+    .header {
+        height: 340px; 
+        column-gap: 0px;  
+     
+    }
+    .header__menu__button {
+        height: 264px;
+        width: 400px;
+        object-fit: fill;  
+    }
+    .header__menu__yellow {
+        height: 264px;
+        width: 400px; 
+    }
+}
+
+@media (max-width: 1200px) {
+    .main__text2 {
+        font-size: 45px;
+    }
+    
+    .main__text3 {
+        font-size: 95px;
+    } 
+}
+
+@media (max-width: 992px) {
+    .header {
+        height: 530px;  
+        column-gap: 0px;  
+        flex-direction: column;
+        align-items: center;
+    }
+    .header__menu {
+        padding-top: 0px;
+    }
+}
+
+@media (max-width: 576px) {
+    .header {
+        height: 200px; 
+        column-gap: 0px;  
+    }
+    .header__menu__button {
+        height: 96px;
+        width: 145px;
+        border-radius: 10px;
+    }
+    .header__menu__yellow {
+        height: 96px;
+        width: 145px; 
+    }
+    
+    .main__text1 {
+        font-size: 5px;
+    }
+    
+    .main__text2 {
+        font-size: 15px;
+    }
+    
+    .main__text3 {
+        font-size: 30px;
+    } 
+
+    .footer {
+        font-size: 5px;
+    }
+}
+
+@media (max-width: 320px) {
+    .header {
+        flex-direction: column;
+        column-gap: 0px;  
+    }    
 }
