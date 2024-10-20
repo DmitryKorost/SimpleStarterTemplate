@@ -181,157 +181,102 @@ body:before {
     box-shadow:  0 4px 8px 0 #9d62af, 0 6px 20px 0 #9d62af;
 }
 
-.main__text {
-    margin: 0;
+.main__inf {
+    margin-top: 231px;
+    max-width: 1552px;
+    height: 1424px;
+    margin-right: 50px;
+    background-color: #fff;
+    border-radius: 41px;
+    display: flex;
 }
 
-.main__text_1 {
-    margin-top: 182px;
+.main__inf__text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 110px;
+    margin-left: 110px;
+    max-width: 699px;
+    height: 944px;
+    color: #000000;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    scroll-behavior: smooth;
+}
+
+.main__inf__text__1 {
+    margin-top: 10px;
     margin-bottom: 0px;
     font-family: 'Oswald', sans-serif;
     font-size: 56px;
-    font-weight: bold;
+    font-weight: bold;    
 }
 
-.main__text_2 {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    line-height: 0.75;
-    font-family: 'Oswald', sans-serif;
-    font-size: 120px;
-    font-weight: bold;
-}
-
-.main__text_3 {
-    max-width: 1083px;
-    margin-top: 44px;
+.main__inf__text__2 {
+    margin-top: 10px;
     margin-bottom: 0px;
     font-family: 'Roboto', sans-serif;
     font-size: 29px;
 }
 
-.main__button {
-    background:  transparent;
-    border:  2px solid white;
-    margin-top: 81px;
+.main__inf__text__3 {
+    margin-top: 10px;
     margin-bottom: 0px;
-    width: 352px;
-    height: 70px;
-    border-radius: 17px;
     font-family: 'Oswald', sans-serif;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 27px;
+    font-weight: bold;    
 }
 
-.main__button1 {
-    display: flex;
-    max-width: 1273px;
-    height: 156px;
-    margin-right: 50px;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 93px;
-    background: none;
-
+.main__inf__pfoto__image {
+    width: 480px;
+    height: 720px;
+    margin-top: 130px;
+    background-image: url('/image/фото.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center
 }
 
-.main__button1__1 {
-    border:  none;
-    width: 259px;
-    height: 100%; 
-    background-image: url('./image/button1.jpg');
-    border-radius: 11px;
+.main__inf__pfoto__text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 0px;
+    font-weight: bold;  
 }
 
-.main__button1__2 {
-    border: none;
-    width: 259px;
-    height: 100%; 
-    background-image: url('./image/button2.jpg');
-    border-radius: 11px;
-}
-
-.main__button1__3 {
-    border: none;
-    width: 259px;
-    height: 100%; 
-    background-image: url('./image/button3.jpg');
-    border-radius: 11px;
-}
-
-.main__button1__4 {
-    border: none;
-    width: 259px;
-    height: 100%; 
-    background-image: url('./image/button4.jpg');
-    border-radius: 11px;
-}
-
-.main__news {
-    margin-top: 76px;
-}
-
-.main__news__menu {
-    display: flex;
-    align-items: center;
-}
-
-.main__news__menu__text {
-    margin: 0;
-    font-family: 'Oswald', sans-serif;
-    font-size: 42px;
-    font-weight: bold;
-}
-
-.main__news__menu__images {
-    width: 37px;
-    height: 34px;
-    /* margin: 0; */
-    background-image: url('./image/Triangle.svg');
-    background-repeat:no-repeat;
-    background: transparent;
-    border: none;
-    z-index: -2;
-}
-
-.main__footer__text {
-    max-width: 1083px;
-    margin-top: 44px;
-    margin-bottom: 0px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-}
-
-@media (max-width: 1900px) {
+@media (max-width: 2100px) {
     .main__menu-mini {
         margin-right: 100px;
     }
 }
 
-@media (max-width: 1600px) {
-    .main__button1 {
-        display: block;
+@media (max-width: 1800px) {
+    .main {
+        margin-left: 50px;
     }
-    .main__news {
-        margin-top: 200px;
+
+    .main__inf__text {
+        margin-left: 50px;
+    }
+    .main__inf__text__1 {
+        font-size: 30px;   
+    }
+    
+    .main__inf__text__2 {
+        font-size: 16px;
+    }
+    
+    .main__inf__text__3 {
+        font-size: 16px;   
     }
 }
 
 @media (max-width: 1200px) {
-
-    .main__text_1 {
-        font-size: 20px;
-        line-height: 1;
-    }
-    
-    .main__text_2 {
-        margin-top: 20px;
-        font-size: 60px;
-    }   
-}
-
-@media (max-width: 1030px) {
-    .main__news {
-        margin-top: 500px;
+    .main__inf__pfoto__image {
+        width: 240px;
+        height: 360px;
+        margin-top: 50px;
     }
 }
